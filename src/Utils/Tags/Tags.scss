@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.project-tags {
+//   width: 340px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 12px;
+
+  .tag-name {
+    font-family: 'Poppins' sans-serif;
+    font-weight: 600;
+    background: #1982FC;
+    color: #b3e6f4;
+    border-radius: 30px;
+    padding: 0.7rem;
+  }
+}

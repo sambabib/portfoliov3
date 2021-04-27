@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.navigation {
+  max-width: 600px;
+  min-width: 400px;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  margin-top: 1rem;
+  position: fixed;
+  left: 360px;
+
+  .navigation-items {
+    h3 {
+      font-size: 14px;
+      color: gray;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 1rem 0;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    #number {
+      font-size: 24px;
+      padding-right: 0.8rem;
+      color: gray;
+    }
+  }
+}

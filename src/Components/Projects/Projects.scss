@@ -1,0 +1,30 @@
+
+.projects {
+  // margin: 0 auto;
+  position: relative;
+  top: 40px;
+
+  .project-grid-initial {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    // flex-wrap: wrap;
+  }
+
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .project-stack {
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+  }
+}
