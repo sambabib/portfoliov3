@@ -1,13 +1,14 @@
 .app {
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden !important;
 }
 
 .side {
-    height: 100%;
-    margin: 1.5rem 4rem;
-    position: absolute;
-    right: 0;
+  height: 100%;
+  /* margin: 1.5rem 4rem; */
+  position: absolute;
+  right: 0;
 }

@@ -4,15 +4,12 @@
 .grid {
     position: relative;
     border: 2px solid gray;
-    min-height: 280px;
-    width: 390px;
+    min-height: 190px;
+    width: 300px;
     border-radius: 5px;
     transition: all .2s ease-in-out;
     cursor: pointer;
 
-    // &:hover {
-    //   transform: scale(1.1);
-    // }
 
     .project-links {
       position: absolute;

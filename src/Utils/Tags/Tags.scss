@@ -2,12 +2,11 @@
 
 
 .project-tags {
-//   width: 340px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 12px;
+  font-size: 10px;
 
   .tag-name {
     font-family: 'Poppins' sans-serif;

@@ -11,17 +11,19 @@
   padding: 0 2rem;
   margin-top: 1rem;
   position: fixed;
-  left: 360px;
+  left: 290px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
   .navigation-items {
     h3 {
-      font-size: 14px;
+      font-size: 12px;
       color: gray;
       font-family: 'Josefin Sans', sans-serif;
     }
 
     p {
-      font-size: 14px;
+      font-size: 10px;
       font-weight: 500;
       text-transform: uppercase;
       margin: 1rem 0;
@@ -35,7 +37,7 @@
     }
 
     #number {
-      font-size: 24px;
+      font-size: 22px;
       padding-right: 0.8rem;
       color: gray;
     }
