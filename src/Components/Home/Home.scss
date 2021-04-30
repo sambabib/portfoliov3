@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 
 .home {
-  max-width: 390px;
-  min-width: 280px;
-  height: calc(100vh - 50px);
-  border-right: 1px solid gray;
+  max-width: 320px;
+  min-width: 190px;
+  height: calc(100vh - 400px);
+  border-right: 2px solid gray;
   display: flex;
   align-items: center;
   padding: 0 4rem;
-  margin: 2rem 0;
+  margin: 15rem 0;
   position: fixed;
   
 
@@ -18,7 +18,7 @@
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     line-height: 1.2rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
 
   p {

@@ -1,12 +1,18 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Home from './Components/Home/Home';
+import About from './Components/About/About';
 import Navigation from './Components/Navigation/Navigation';
 import Projects from './Components/Projects/Projects';
 import Socials from './Components/Socials/Socials';
 import './App.css';
 
 const routes = [
+  {
+    path: '/',
+    exact: true,
+    main: () => <About />,
+  },
   {
     path: '/projects',
     exact: true,

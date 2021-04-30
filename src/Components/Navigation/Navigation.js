@@ -10,13 +10,18 @@ const Navigation = () => {
           <span id='number'>01/</span>Resume
         </p>
         <p>
+          <Link to='/' style={{ textDecoration: 'none', color: '#fff' }}>
+            <span id='number'>02/</span>Home
+          </Link>
+        </p>
+        <p>
           <Link to='/projects' style={{ textDecoration: 'none', color: '#fff' }}>
-            <span id='number'>02/</span>Projects
+            <span id='number'>03/</span>Projects
           </Link>
         </p>
         <p>
           <Link to='/socials' style={{ textDecoration: 'none', color: '#fff' }}>
-            <span id='number'>03/</span>Socials
+            <span id='number'>04/</span>Socials
           </Link>
         </p>
       </div>
