@@ -36,7 +36,7 @@ const Socials = () => {
         {socials.map((social) => {
           return (
             <div className='connect-links' key={social.id}>
-              <a className='links' href={social.url} target='__blank'>
+              <a className='links' href={social.url} target='__blank' rel='noreferrer'>
                 <img src={social.image} alt='github' />
                 <p id='socials'>{social.name}</p>
                 <img src={Arrow} alt='arrow' />
