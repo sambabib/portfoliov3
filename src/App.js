@@ -6,8 +6,9 @@ import Navigation from './Components/Navigation/Navigation';
 import Projects from './Components/Projects/Projects';
 import Socials from './Components/Socials/Socials';
 import useMobile from './Utils/Mobile/useMobile';
-import './App.css';
 import MobileHeader from './Components/MobileHeader/MobileHeader';
+import copyright from './Images/copyright.svg';
+import './App.css';
 
 const routes = [
   {
@@ -29,6 +30,7 @@ const routes = [
 
 const App = () => {
   const { width } = useMobile();
+  const date = new Date().getFullYear();
 
   return (
     <>
@@ -69,6 +71,10 @@ const App = () => {
           </div>
         </Router>
       )}
+      <div className='footer-txt'>
+        <img src={copyright} alt='copyright' />
+        <p>Kite {date}</p>
+      </div>
     </>
   );
 };

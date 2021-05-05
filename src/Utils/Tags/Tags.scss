@@ -6,13 +6,15 @@
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 10px;
+  justify-content: flex-start;
+
+  @media (max-width: 600px) {
+    // border: 2px solid blue;
+  }
 
   .tag-name {
     font-family: 'Poppins' sans-serif;
     font-weight: 600;
-    // background: #1982fc;
-    // color: #b3e6f4;
-    // border-radius: 30px;
     color: gray;
     padding: 0.7rem;
   }

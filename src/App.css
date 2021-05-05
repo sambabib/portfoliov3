@@ -16,3 +16,40 @@
   margin: 1rem;
   padding: .5rem;
 }
+
+@media (max-width: 600px) {
+  .footer-txt {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 760px) {
+  .footer-txt {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
