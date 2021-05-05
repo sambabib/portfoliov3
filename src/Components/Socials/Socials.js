@@ -28,7 +28,7 @@ const socials = [
 const Socials = () => {
   return (
     <div className='socials' id='socials'>
-      <h3 id='socials-heading'>Socials 🌐</h3>
+      <h3 id='socials-heading'>Connect with me 🌐</h3>
       <p id='text'>
         Rumor has it that I'm pretty awesome, if you've heard of my
         awesomeness and you wanna say hello, you can find me here.
