@@ -8,14 +8,10 @@
   font-size: 10px;
   justify-content: flex-start;
 
-  @media (max-width: 600px) {
-    // border: 2px solid blue;
-  }
-
   .tag-name {
     font-family: 'Poppins' sans-serif;
     font-weight: 600;
     color: gray;
-    padding: 0.7rem;
+    padding: 0 0.5rem;
   }
 }
