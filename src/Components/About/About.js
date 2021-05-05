@@ -12,10 +12,10 @@ const About = () => {
           <img src={cartman} alt='avatar' />
         </div>
         <p>
-          I write front-end code out of a space pod in Lagos, Nigeria. In my
+          I write frontend code out of a space pod in Lagos, Nigeria. In my
           spare time I'm a UI enthusiast, when I'm not binge watching sitcoms, I
           paint rainbows in the sky. My favorite sitcom's The Office && Eric
-          Cartman is my spirit cartoon. 😀
+          Cartman's my spirit cartoon. 😀
         </p>
         <div className="resume-cta">
           <a href={resumeLink} target='_blank' rel='noreferrer'>

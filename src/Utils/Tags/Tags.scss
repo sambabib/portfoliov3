@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
 .project-tags {
   display: flex;
   flex-direction: row;
@@ -11,9 +10,10 @@
   .tag-name {
     font-family: 'Poppins' sans-serif;
     font-weight: 600;
-    background: #1982FC;
-    color: #b3e6f4;
-    border-radius: 30px;
+    // background: #1982fc;
+    // color: #b3e6f4;
+    // border-radius: 30px;
+    color: gray;
     padding: 0.7rem;
   }
 }

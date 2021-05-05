@@ -5,7 +5,9 @@ import About from './Components/About/About';
 import Navigation from './Components/Navigation/Navigation';
 import Projects from './Components/Projects/Projects';
 import Socials from './Components/Socials/Socials';
+import useMobile from './Utils/Mobile/useMobile';
 import './App.css';
+import MobileHeader from './Components/MobileHeader/MobileHeader';
 
 const routes = [
   {
@@ -26,30 +28,48 @@ const routes = [
 ];
 
 const App = () => {
+  const { width } = useMobile();
+
   return (
-    <Router>
-      <Helmet>
-        <title>Kite | Folio</title>
-      </Helmet>
-      <div className='app'>
-        <Home />
-        <Navigation />
-        <div className='side'>
-          <Switch>
-            {routes.map((route, index) => {
-              return (
-                <Route
-                  key={index}
-                  path={route.path}
-                  exact={route.exact}
-                  children={route.main}
-                />
-              );
-            })}
-          </Switch>
-        </div>
-      </div>
-    </Router>
+    <>
+      {width <= 600 ? (
+        <>
+          <Helmet>
+            <title>Kite | Folio</title>
+          </Helmet>
+          <div className='mobile-view'>
+            <MobileHeader />
+            <About />
+            <Projects />
+            <Socials />
+          </div>
+        </>
+      ) : (
+        <Router>
+          <Helmet>
+            <title>Kite | Folio</title>
+          </Helmet>
+          <div className='app'>
+            <Home />
+            <Navigation />
+            <div className='side'>
+              <Switch>
+                {routes.map((route, index) => {
+                  return (
+                    <Route
+                      key={index}
+                      path={route.path}
+                      exact={route.exact}
+                      children={route.main}
+                    />
+                  );
+                })}
+              </Switch>
+            </div>
+          </div>
+        </Router>
+      )}
+    </>
   );
 };
 

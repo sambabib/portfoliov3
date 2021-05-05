@@ -18,7 +18,7 @@ const navigation = [
     id: 3,
     number: '03',
     link: '/socials',
-    title: 'Socials',
+    title: 'Connect with me',
   },
 ];
 

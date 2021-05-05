@@ -1,0 +1,30 @@
+.mobile-header {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+    .menu-btn {
+      width: 44px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+
+      .menu-btn-line {
+        justify-self: end;
+        border: 1px solid #fff;
+
+        &:nth-child(1) {
+          width: 34px;
+        }
+
+        &:nth-child(2) {
+          width: 24px;
+        }
+      }
+    }
+  }
+}

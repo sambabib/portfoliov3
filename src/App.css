@@ -8,7 +8,11 @@
 
 .side {
   height: 100%;
-  /* margin: 1.5rem 4rem; */
   position: absolute;
   right: 0;
+}
+
+.mobile-view {
+  margin: 1rem;
+  padding: .5rem;
 }

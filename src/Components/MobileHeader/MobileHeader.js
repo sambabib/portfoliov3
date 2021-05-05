@@ -1,9 +1,25 @@
+import { useState } from 'react';
+import MobileMenu from '../MobileMenu/MobileMenu';
+import logo from './logo.svg';
 import './MobileHeader.scss';
 
 const MobileHeader = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className='mobile-header'>
-      <p>hello, i'm on mobile</p>
+        <div className='header'>
+          <img src={logo} alt='logo' />
+          <div className='menu-btn' onClick={handleMenuToggle}>
+            <div className='menu-btn-line'></div>
+            <div className='menu-btn-line'></div>
+          </div>
+        </div>
+        {open ? <MobileMenu open={open} setOpen={setOpen} /> : null}
     </div>
   );
 };

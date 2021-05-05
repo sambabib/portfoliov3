@@ -51,12 +51,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
+      <h3 id='project-heading'>Projects 📁</h3>
       <div className='project-grid-initial'>
         {projects.map((project) => {
           return (
             <>
-              <div className='project-grid'>
+              <div className='project-grid' key={project.id}>
                 <Work
                   id={project.id}
                   title={project.title}
