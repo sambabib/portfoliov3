@@ -59,7 +59,10 @@
     width: 100% !important;
     position: relative;
     bottom: 0;
-    padding: 1.8rem;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
   }
 
   .connect-links {
@@ -67,6 +70,10 @@
     border: 1px solid gray;
     border-radius: 5px;
     padding: 2rem;
+
+    @media (max-width: 600px) {
+      width: 150px;
+    }
   }
 
   .links {

@@ -43,6 +43,32 @@
       }
     }
 
+    .mobile-intro {
+      @media (max-width: 600px) {
+        h3 {
+          font-weight: 700;
+          font-size: 14px;
+          font-family: 'Josefin Sans', sans-serif;
+          text-transform: uppercase;
+          line-height: 1.2rem;
+          letter-spacing: 2px;
+        }
+
+        p {
+          font-size: 10px;
+          font-weight: 600;
+          color: gray;
+          margin: 1rem 0;
+          text-transform: uppercase;
+          font-family: 'Josefin Sans', sans-serif;
+        }
+      }
+
+      @media (min-width: 760px) {
+        display: none;
+      }
+    }
+
     .resume-cta {
       padding: 2rem;
       margin-top: 1rem;
@@ -58,14 +84,14 @@
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 2px;
-        background: linear-gradient(to right, #1982FC 50%, transparent 50%);
+        background: linear-gradient(to right, #1982fc 50%, transparent 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         transition: all 0.5s ease-out;
         cursor: pointer;
 
         &:hover {
-          border: 1px solid #1982FC;
+          border: 1px solid #1982fc;
           font-weight: 600;
           background-position: left bottom;
           transition: all 0.35s ease-in-out;

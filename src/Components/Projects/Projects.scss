@@ -43,16 +43,16 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .project-stack {
     display: flex;
-    width: 300px;
+    width: 290px;
     height: 40px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
