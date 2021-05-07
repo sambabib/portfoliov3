@@ -4,7 +4,6 @@
 .navigation {
   max-width: 600px;
   min-width: 400px;
-  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +11,8 @@
   margin-top: 1rem;
   position: fixed;
   left: 240px;
+  top: 50%;
+  transform: translateY(-50%);
   text-transform: uppercase;
   letter-spacing: 1px;
 
