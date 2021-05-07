@@ -2,6 +2,9 @@
 
 .socials {
   width: 900px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media (max-width: 600px) {
     width: 100% !important;
@@ -27,7 +30,6 @@
     width: 600px;
     padding: 2rem;
     margin: 0 auto;
-    margin-top: 20rem !important;
     text-align: center;
     font-size: 10px;
     font-weight: 600;
@@ -35,6 +37,7 @@
     letter-spacing: 1px;
     line-height: 1.8rem;
     font-family: 'Poppins' sans-serif;
+    margin-bottom: 2rem;
 
     @media (max-width: 600px) {
       width: 100%;
@@ -52,8 +55,6 @@
   flex-wrap: wrap;
   gap: 2rem;
   width: 100%;
-  position: absolute;
-  bottom: 155px;
 
   @media (max-width: 600px) {
     width: 100% !important;
