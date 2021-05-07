@@ -8,6 +8,7 @@ const MobileHeader = () => {
 
   const handleMenuToggle = () => {
     setOpen(!open);
+    console.log('clicking')
   };
 
   return (
