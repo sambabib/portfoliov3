@@ -19,7 +19,7 @@ const About = () => {
           Hi, I write frontend code out of a space pod in Lagos, Nigeria. In my
           spare time I'm a UI enthusiast, when I'm not binge watching sitcoms, I
           paint rainbows in the sky. My favorite sitcom's The Office && Eric
-          Cartman's my spirit cartoon. 😀
+          Cartman's my spirit cartoon character. 😀
         </p>
         <div className="resume-cta">
           <a href={resumeLink} target='_blank' rel='noreferrer'>
