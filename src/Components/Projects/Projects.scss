@@ -5,9 +5,14 @@
   right: 0;
   overflow-x: hidden !important;
 
-  @media (max-width: 600px) {
+  @media (max-width: 468px) {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  @media (width: 768px) {
+    width: 100%;
+    top: 10px;
   }
 
   #project-heading {
@@ -20,7 +25,7 @@
     text-transform: uppercase;
 
 
-    @media (min-width: 600px) {
+    @media (min-width: 1024px) {
       display: none;
     }
   }
@@ -33,9 +38,13 @@
     justify-content: center;
     gap: 2.8rem;
 
-    @media (max-width: 600px) {
+    @media (max-width: 468px) {
       width: 100%;
       gap: 3.6rem;
+    }
+
+    @media (width: 768px) {
+      width: 100%;
     }
   }
 

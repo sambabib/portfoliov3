@@ -1,0 +1,33 @@
+.desktop-view {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden !important;
+}
+
+.side {
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.footer-txt {
+  color: gray;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-left: 4rem;
+}
+
+.footer-txt > p {
+  margin-left: 0.5rem;
+}

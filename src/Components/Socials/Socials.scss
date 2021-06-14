@@ -6,11 +6,16 @@
   top: 50%;
   transform: translateY(-50%);
 
-  @media (max-width: 600px) {
+  @media (max-width: 468px) {
     width: 100% !important;
-    top: 150px !important;
+    top: 210px !important;
   }
 
+  @media (width: 768px) {
+    width: 100% !important;
+    top: 170px !important;
+  }
+ 
   #socials-heading {
     color: #fff;
     font-size: 16px;
@@ -22,7 +27,7 @@
     text-transform: uppercase;
     font-family: 'Poppins' sans-serif !important;
 
-    @media (min-width: 600px) {
+    @media (min-width: 1024px) {
       display: none;
     }
   }

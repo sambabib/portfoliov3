@@ -1,0 +1,30 @@
+.mobile-view {
+  margin: 1rem;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+@media (width: 768px) {
+  .mobile-view {
+    margin: 2.5rem;
+    padding: 1rem;
+    height: 100%;
+
+    .footer-txt {
+      color: gray;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: row;
+      gap: 0.3rem;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

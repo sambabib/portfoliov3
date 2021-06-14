@@ -16,6 +16,10 @@
     width: 100%;
   }
 
+  @media (width: 768px) {
+    width: 100%;
+  }
+
   .intro {
     width: 600px;
     padding: 2rem;
@@ -37,6 +41,10 @@
       font-size: 12px !important;
     }
 
+    @media (width: 768px) {
+      top: 240px;
+    }
+
     .image-container {
       img {
         width: 100px !important;
@@ -47,7 +55,7 @@
     }
 
     .mobile-intro {
-      @media (max-width: 600px) {
+      @media (max-width: 468px) {
         h3 {
           font-weight: 700;
           font-size: 14px;
@@ -67,8 +75,28 @@
         }
       }
 
-      @media (min-width: 760px) {
+      @media (min-width: 1024px) {
         display: none;
+      }
+
+      @media (max-width: 768px) {
+        h3 {
+          font-weight: 700;
+          font-size: 18px;
+          font-family: 'Josefin Sans', sans-serif;
+          text-transform: uppercase;
+          line-height: 1.5rem;
+          letter-spacing: 2px;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 600;
+          color: gray;
+          margin: 1rem 0;
+          text-transform: uppercase;
+          font-family: 'Josefin Sans', sans-serif;
+        }
       }
     }
 
