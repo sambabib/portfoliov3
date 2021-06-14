@@ -47,7 +47,7 @@ const DesktopView = () => {
               })}
             </Switch>
           </div>
-          <div className='footer-txt'>
+          <div className='desktop-footer-txt'>
             <img src={copyright} alt='copyright' />
             <p>Kite {date}</p>
           </div>
