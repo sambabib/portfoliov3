@@ -5,7 +5,7 @@ import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Socials from '../Socials/Socials';
 import copyright from '../../Images/copyright.svg';
-import './DesktopView.css';
+import './DesktopView.scss';
 
 const routes = [
   {

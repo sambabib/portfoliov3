@@ -4,12 +4,22 @@
   flex-direction: row;
   height: 100%;
   overflow: hidden !important;
+
+  @media (max-width: 1024px) {
+    height: 100% !important;
+  }
 }
 
 .side {
   height: 100%;
   position: absolute;
   right: 0;
+
+  @media (max-width: 1024px) {
+    border: 2px solid orange;
+    width: 580px;
+    height: 100% !important;
+  }
 }
 
 .desktop-footer-txt {
@@ -26,8 +36,8 @@
   position: absolute;
   bottom: 0;
   margin-left: 4rem;
-}
 
-.dekstop-footer-txt > p {
-  margin-left: 0.5rem;
+  p {
+    margin-left: 0.5rem;
+  }
 }

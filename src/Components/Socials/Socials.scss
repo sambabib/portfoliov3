@@ -15,6 +15,10 @@
     width: 100% !important;
     top: 170px !important;
   }
+
+  @media (width: 1024px) {
+    width: 100%;
+  }
  
   #socials-heading {
     color: #fff;
