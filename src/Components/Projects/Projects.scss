@@ -51,10 +51,11 @@
     }
 
     @media (width: 1024px) {
-      border: 2px solid yellow;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
     }
   }
 

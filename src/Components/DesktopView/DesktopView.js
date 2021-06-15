@@ -29,30 +29,32 @@ const DesktopView = () => {
   const date = new Date().getFullYear();
 
   return (
-      <Router>
-        <div className='desktop-view'>
-          <Home />
-          <Navigation />
-          <div className='side'>
-            <Switch>
-              {routes.map((route, index) => {
-                return (
-                  <Route
-                    key={index}
-                    path={route.path}
-                    exact={route.exact}
-                    children={route.main}
-                  />
-                );
-              })}
-            </Switch>
-          </div>
-          <div className='desktop-footer-txt'>
-            <img src={copyright} alt='copyright' />
-            <p>Kite {date}</p>
-          </div>
+    <Router>
+      <div className='desktop-view'>
+        <Home />
+        <Navigation />
+
+        <div className='desktop-footer-txt'>
+          <img src={copyright} alt='copyright' />
+          <p>Kite {date}</p>
         </div>
-      </Router>
+
+        <div className='side'>
+          <Switch>
+            {routes.map((route, index) => {
+              return (
+                <Route
+                  key={index}
+                  path={route.path}
+                  exact={route.exact}
+                  children={route.main}
+                />
+              );
+            })}
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 };
 

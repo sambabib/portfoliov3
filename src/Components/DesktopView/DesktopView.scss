@@ -16,7 +16,6 @@
   right: 0;
 
   @media (max-width: 1024px) {
-    border: 2px solid orange;
     width: 580px;
     height: 100% !important;
   }
@@ -39,5 +38,9 @@
 
   p {
     margin-left: 0.5rem;
+  }
+
+  @media (width: 1024px) {
+    margin-left: 2rem;
   }
 }
