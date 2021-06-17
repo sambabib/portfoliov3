@@ -6,14 +6,14 @@ const projects = [
   {
     id: 1,
     title: 'Robofriends',
-    live: '',
+    live: 'https://sambabib.github.io/robofriends/',
     github: 'https://github.com/sambabib/robofriends',
     tags: [{ id: 1, name: 'react' }],
   },
   {
     id: 2,
     title: 'Amazon Clone',
-    live: '',
+    live: 'https://github.com/sambabib/amazon-clone',
     github: '',
     tags: [
       { id: 1, name: 'react' },
@@ -25,9 +25,9 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Image Uploader',
+    title: 'ImgUploader',
     live: '',
-    github: '',
+    github: 'https://github.com/sambabib/imguploader',
     tags: [
       { id: 1, name: 'react' },
       { id: 2, name: 'node.js' },
@@ -39,7 +39,7 @@ const projects = [
     id: 4,
     title: 'Smartbrain',
     live: '',
-    github: '',
+    github: 'https://github.com/sambabib/smartbrain',
     tags: [
       { id: 1, name: 'react' },
       { id: 2, name: 'node.js' },
