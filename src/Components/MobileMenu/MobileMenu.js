@@ -1,6 +1,5 @@
 import logo from '../MobileHeader/logo.svg';
 import close from './close.svg';
-import line from './line.svg';
 import './MobileMenu.scss';
 
 const menu = [
@@ -37,7 +36,6 @@ const MobileMenu = ({ open, setOpen }) => {
               return (
                 <>
                   <div className='menu-flex'>
-                    <img src={line} alt='menu line' />
                     <ul>
                       <li key={item.id} onClick={() => setOpen(!open)}>
                         <a

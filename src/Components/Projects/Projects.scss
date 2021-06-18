@@ -36,10 +36,11 @@
   .project-grid-initial {
     display: flex;
     flex-direction: row;
-    width: 900px;
+    width: 700px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2.8rem;
+    margin-left: 4rem;
 
     @media (max-width: 468px) {
       width: 100%;
@@ -56,6 +57,7 @@
       justify-content: flex-start;
       align-items: center;
       gap: 1rem;
+      margin-left: 0 !important;
     }
   }
 

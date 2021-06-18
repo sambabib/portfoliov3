@@ -4,7 +4,7 @@ import './Work.scss';
 
 const Work = ({ id, title, live, github }) => {
   return (
-    <div className='work'>
+    <div className='work' key={id}>
       <div className='grid'>
         <div className='project-links'>
           <a href={github} target='_blank' rel='noreferrer'>

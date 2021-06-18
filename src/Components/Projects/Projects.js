@@ -47,6 +47,18 @@ const projects = [
       { id: 4, name: 'postgresql' },
     ],
   },
+  {
+    id: 5,
+    title: 'GithubRepo Search',
+    live: '',
+    github: 'hhttps://github.com/sambabib/github-repo-page',
+    tags: [
+      { id: 1, name: 'html' },
+      { id: 2, name: 'scss' },
+      { id: 3, name: 'javascript' },
+      { id: 4, name: 'graphql' },
+    ],
+  },
 ];
 
 const Projects = () => {
@@ -57,16 +69,17 @@ const Projects = () => {
         {projects.map((project) => {
           return (
             <>
-              <div className='project-grid' key={project.id}>
+              <div className='project-grid'>
                 <Work
                   id={project.id}
                   title={project.title}
                   live={project.live}
                   github={project.github}
+                  key={project.id}
                 />
                 <div className='project-stack'>
                   {project.tags.map((tag) => {
-                    return <Tags id={tag.id} name={tag.name} />;
+                    return <Tags key={tag.id} id={tag.id} name={tag.name} />;
                   })}
                 </div>
               </div>

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 
 .home {
-  max-width: 320px;
-  min-width: 190px;
   border-right: 2px solid gray;
   display: flex;
   align-items: center;
@@ -34,5 +32,6 @@
   .home {
     width: 200px;
     padding: 0 2rem;
+    border: none;
   }
 }
