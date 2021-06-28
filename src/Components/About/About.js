@@ -2,7 +2,7 @@ import './About.scss';
 import cartman from './eric-cartman.jpg';
 
 
-const resumeLink = 'https://drive.google.com/file/d/1TSaPgiJXbrS-t1UCDpDXcoYCCYEiDK-i/view?usp=sharing'
+const resumeLink = 'https://drive.google.com/file/d/1gRN8FA08qc_cM3Q3tP51-GQh-wE0_2td/view?usp=sharing'
 
 const About = () => {
   return (
