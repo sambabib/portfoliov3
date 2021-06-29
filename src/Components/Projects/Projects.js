@@ -13,8 +13,8 @@ const projects = [
   {
     id: 2,
     title: 'Amazon Clone',
-    live: 'https://github.com/sambabib/amazon-clone',
-    github: '',
+    live: '',
+    github: 'https://github.com/sambabib/amazon-clone',
     tags: [
       { id: 1, name: 'react' },
       { id: 2, name: 'node.js' },
@@ -25,18 +25,28 @@ const projects = [
   },
   {
     id: 3,
-    title: 'ImgUploader',
-    live: '',
-    github: 'https://github.com/sambabib/imguploader',
+    title: 'Hulu 2.0',
+    live: 'https://hulu2-0-murex.vercel.app/',
+    github: 'https://github.com/sambabib/hulu2.0',
     tags: [
-      { id: 1, name: 'react' },
-      { id: 2, name: 'node.js' },
-      { id: 3, name: 'express.js' },
-      { id: 4, name: 'mongodb' },
+      { id: 1, name: 'next.js' },
+      { id: 2, name: 'tailwind css' },
     ],
   },
   {
     id: 4,
+    title: 'GithubRepo Search',
+    live: 'https://kite-repo-profile.netlify.app/',
+    github: 'hhttps://github.com/sambabib/github-repo-page',
+    tags: [
+      { id: 1, name: 'html' },
+      { id: 2, name: 'scss' },
+      { id: 3, name: 'javascript' },
+      { id: 4, name: 'graphql' },
+    ],
+  },
+  {
+    id: 5,
     title: 'Smartbrain',
     live: '',
     github: 'https://github.com/sambabib/smartbrain',
@@ -45,18 +55,6 @@ const projects = [
       { id: 2, name: 'node.js' },
       { id: 3, name: 'express.js' },
       { id: 4, name: 'postgresql' },
-    ],
-  },
-  {
-    id: 5,
-    title: 'GithubRepo Search',
-    live: '',
-    github: 'hhttps://github.com/sambabib/github-repo-page',
-    tags: [
-      { id: 1, name: 'html' },
-      { id: 2, name: 'scss' },
-      { id: 3, name: 'javascript' },
-      { id: 4, name: 'graphql' },
     ],
   },
 ];
