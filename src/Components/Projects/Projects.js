@@ -35,18 +35,6 @@ const projects = [
   },
   {
     id: 4,
-    title: 'GithubRepo Search',
-    live: 'https://kite-repo-profile.netlify.app/',
-    github: 'hhttps://github.com/sambabib/github-repo-page',
-    tags: [
-      { id: 1, name: 'html' },
-      { id: 2, name: 'scss' },
-      { id: 3, name: 'javascript' },
-      { id: 4, name: 'graphql' },
-    ],
-  },
-  {
-    id: 5,
     title: 'Smartbrain',
     live: '',
     github: 'https://github.com/sambabib/smartbrain',
