@@ -1,0 +1,38 @@
+.portfolio__projects {
+  .portfolio__projects__container {
+    display: flex;
+    align-items: baseline;
+    gap: 10rem;
+    border-bottom: 1px solid #808080;
+
+    @media (max-width: 1240px) {
+      gap: 4rem;
+    }
+
+    @media (max-width: 490px) {
+      gap: 2rem;
+    }
+
+    .portfolio__project__number {
+      font-size: 0.9rem;
+      color: #808080;
+
+      @media (max-width: 490px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    .portfolio__project__title {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 2px;
+      padding: 40px 0;
+      cursor: pointer;
+
+      @media (max-width: 490px) {
+        font-size: 24px;
+      }
+    }
+  }
+}

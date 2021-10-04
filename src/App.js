@@ -1,21 +1,34 @@
 import { Helmet } from 'react-helmet';
-import DesktopView from './Components/DesktopView/DesktopView';
-import ResponsiveLayout from './Components/ResponsiveLayout';
-import MobileView from './Components/MobileView/MobileView';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+// @components
+import Home from './screens/Home/Home';
+import SayHello from './screens/SayHello/SayHello';
+import Topbar from './components/Topbar/Topbar';
+import Portfolio from './screens/Portfolio/Portfolio';
 
 const App = () => {
   return (
     <>
-      <Helmet>
-        <title>Kite | Folio</title>
-      </Helmet>
-      <div className='app'>
-        <ResponsiveLayout
-          breakpoint={768}
-          showDesktop={() => <DesktopView />}
-          showMobile={() => <MobileView />}
-        />
-      </div>
+      <Router>
+        <Helmet>
+          <title>Kite | Folio</title>
+        </Helmet>
+        <div className='app'>
+          <Topbar />
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route exact path='/sayhello'>
+              <SayHello />
+            </Route>
+            <Route exact path='/portfolio'>
+              <Portfolio />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </>
   );
 };
