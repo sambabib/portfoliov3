@@ -1,141 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
-
 .about {
-  width: 900px;
-  height: 100%;
-  text-align: center;
-  padding: 0.7rem;
-  line-height: 1.2rem;
-  letter-spacing: 1px;
-  font-size: 10px;
-  font-family: 'Poppins' sans-serif;
-  margin-bottom: 4.3rem;
+  width: 100%;
 
-  @media (max-width: 468px) {
-    width: 100%;
-    margin-top: 4rem;
-  }
-
-  @media (width: 768px) {
-    width: 100%;
-  }
-
-  @media (width: 1024px) {
-    width: 100%;
-  }
-
-  .intro {
-    width: 600px;
-    padding: 2rem;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 10px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 1px;
-    line-height: 1.8rem;
-    font-family: 'Poppins' sans-serif;
+  @media (max-width: 1240px) {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  }
 
-    @media (max-width: 468px) {
-      width: 100%;
-      top: 330px;
-      font-size: 12px !important;
+  .about__container {
+    display: flex;
+
+    @media (max-width: 1240px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    @media (width: 768px) {
-      top: 240px;
-    }
+    .about__text {
+      max-width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    @media (width: 1024px) {
-      width: 100%;
-    }
+      h3 {
+        font-size: 1.2rem;
+        line-height: 30px;
+        margin-left: 40px;
+        font-weight: 300;
 
-    .image-container {
-      img {
-        width: 100px !important;
-        height: 100px !important;
-        border-radius: 50%;
-        margin-bottom: 1.6rem;
-      }
-    }
-
-    .mobile-intro {
-      @media (max-width: 468px) {
-        h3 {
-          font-weight: 700;
-          font-size: 14px;
-          font-family: 'Josefin Sans', sans-serif;
-          text-transform: uppercase;
-          line-height: 1.2rem;
-          letter-spacing: 2px;
+        @media (max-width: 969px) {
+          font-size: 1.5rem;
+          line-height: 40px;
+          margin-left: 0;
         }
 
-        p {
-          font-size: 10px;
-          font-weight: 600;
-          color: gray;
-          margin: 1rem 0;
-          text-transform: uppercase;
-          font-family: 'Josefin Sans', sans-serif;
+        @media (max-width: 490px) {
+          font-size: 0.9rem;
+          line-height: 20px;
         }
       }
 
-      @media (min-width: 1024px) {
+      @media (max-width: 1240px) {
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 969px) {
+        text-align: center;
+      }
+    }
+
+    .about__img {
+      @media (max-width: 490px) {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 150px !important;
+          height: 500px !important;
+          object-fit: cover !important;
+        }
+      }
+    }
+
+    .about__links {
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+      align-items: center;
+      transform: rotateZ(-90deg);
+      margin: auto;
+      margin-right: -90px;
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #808080;
+      }
+
+      @media (max-width: 1240px) {
+        transform: none;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -80px;
+      }
+
+      @media (max-width: 490px) {
         display: none;
-      }
-
-      @media (max-width: 768px) {
-        h3 {
-          font-weight: 700;
-          font-size: 18px;
-          font-family: 'Josefin Sans', sans-serif;
-          text-transform: uppercase;
-          line-height: 1.5rem;
-          letter-spacing: 2px;
-        }
-
-        p {
-          font-size: 12px;
-          font-weight: 600;
-          color: gray;
-          margin: 1rem 0;
-          text-transform: uppercase;
-          font-family: 'Josefin Sans', sans-serif;
-        }
-      }
-    }
-
-    .resume-cta {
-      padding: 2rem;
-      margin-top: 1rem;
-      font-family: 'Josefin Sans' sans-serif !important;
-
-      button {
-        outline: none;
-        padding: 0.8rem;
-        width: 120px;
-        height: 40px;
-        border: 1px solid gray;
-        font-size: 9px;
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        background: linear-gradient(to right, #1982fc 50%, transparent 50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        transition: all 0.5s ease-out;
-        cursor: pointer;
-
-        &:hover {
-          border: 1px solid #1982fc;
-          font-weight: 600;
-          background-position: left bottom;
-          transition: all 0.35s ease-in-out;
-        }
       }
     }
   }

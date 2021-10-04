@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +8,12 @@
 
 body {
   background: #111;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #f5f3f3;
+  font-family: 'Nunito', sans-serif;
 }
 
 ::-webkit-scrollbar {
-  width: 10px !important;
+  width: 15px !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,7 +22,6 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #888 !important;
-  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -34,4 +31,37 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  width: 100%;
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 969px) {
+  .container {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 490px) {
+  .container {
+    width: 100%;
+  }
 }

@@ -1,0 +1,44 @@
+.bottombar {
+  width: 100%;
+  padding: 2rem 0;
+  margin-top: 20px;
+
+  .bottombar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .bottombar__credit {
+      width: 400px;
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .bottombar__inspired {
+        font-weight: 800;
+        font-size: 0.7rem !important;
+      }
+
+      a {
+        text-decoration: none;
+        color: #f5f3f3;
+      }
+    }
+
+    .bottom__portfolio {
+      h4 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #f5f3f3;
+  }
+
+  @media (max-width: 490px) {
+    padding: 1rem 0;
+  }
+}
