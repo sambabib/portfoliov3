@@ -22,7 +22,7 @@ const SayHello = () => {
 
           <div className='sayhello__resume'>
             <a
-              href='https://drive.google.com/file/d/14DzpnHNCmFh6Qrj-9fL2FWX1CARVQDPi/view?usp=sharing'
+              href='https://drive.google.com/file/d/1j84xgppUd3bbSQNtGXe-vjuKKP6_KkFC/view?usp=sharing'
               target='__blank'
             >
               <DescriptionSharpIcon /> <span>resume(dot)pdf</span>
