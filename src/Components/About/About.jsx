@@ -8,7 +8,7 @@ const About = () => {
     <div className='about'>
       <div className='about__container'>
         <div className='about__text'>
-          <h3>I'm Emmanuel, a frontend engineer out of Lagos, Nigeria.</h3>
+          <h3>I'm Adekite, a frontend engineer out of Lagos, Nigeria.</h3>
         </div>
         <div className='about__img'>
           <img src={gangsta} alt='gangsta hands' />
