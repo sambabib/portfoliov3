@@ -32,6 +32,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      opacity: 0;
 
       @media (max-width: 1240px) {
         align-items: center;
@@ -65,6 +66,10 @@
 
       @media (max-width: 490px) {
         width: 300px;
+      }
+
+      .project__item {
+        opacity: 0;
       }
     }
   }

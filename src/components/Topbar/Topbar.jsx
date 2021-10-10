@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
 import ArrowBackSharpIcon from '@material-ui/icons/ArrowBackSharp';
 import './Topbar.scss';
@@ -14,9 +15,20 @@ const Topbar = () => {
     console.log('state changing');
   };
 
+  const topBarRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(topBarRef.current, {
+      duration: .6,
+      y: 12,
+      opacity: 1,
+      ease: 'power4.out',
+    })
+  }, [])
+
   return (
     <div className='topbar'>
-      <div className='topbar__container'>
+      <div className='topbar__container' ref={topBarRef}>
         <div className='topbar__logo'>
           <Link to='/'>
             <img src={logo} alt='my logo' />

@@ -15,11 +15,20 @@
       justify-content: space-between;
     }
 
+    @media (max-width: 969px) {
+      margin-top: 12px;
+    }
+
+    @media (max-width: 490px) {
+      margin-top: 30px;
+    }
+
     .about__text {
       max-width: 350px;
       display: flex;
       justify-content: center;
       align-items: center;
+      opacity: 0;
 
       h3 {
         font-size: 1.2rem;
@@ -49,6 +58,8 @@
     }
 
     .about__img {
+      opacity: 0;
+
       @media (max-width: 490px) {
         width: 100% !important;
         display: flex;
@@ -71,6 +82,7 @@
       transform: rotateZ(-90deg);
       margin: auto;
       margin-right: -90px;
+      opacity: 0;
 
       p {
         font-size: 0.9rem;

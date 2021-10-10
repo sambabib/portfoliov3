@@ -1,10 +1,24 @@
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
 import './Bottombar.scss';
 
 const Bottombar = () => {
+  const bottomBarRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(bottomBarRef.current, {
+      duration: .8,
+      y: 20,
+      delay: 3,
+      opacity: 1,
+      ease: 'power4.out',
+    });
+  }, []);
+
   return (
     <div className='bottombar'>
-      <div className='bottombar__container'>
+      <div className='bottombar__container' ref={bottomBarRef}>
         <div className='bottombar__credit'>
           <p className='bottombar__inspired'>inspired by Hoang Nguyen.</p>
           <p>

@@ -32,6 +32,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      opacity: 0;
 
       @media (max-width: 1240px) {
         margin-top: -90px;
@@ -72,6 +73,8 @@
       }
 
       .sayhello__bio {
+        opacity: 0;
+
         h2 {
           font-size: 40px;
           font-weight: 500;
@@ -104,6 +107,8 @@
       }
 
       .sayhello__resume {
+        opacity: 0;
+
         a {
           display: flex;
           align-items: center;
@@ -128,6 +133,8 @@
         gap: 4rem;
 
         .sayhello__email {
+          opacity: 0;
+          
           p {
             font-size: 40px;
             font-weight: 300;
@@ -152,6 +159,7 @@
           font-size: 20px;
           font-weight: 600;
           letter-spacing: 1.4px;
+          opacity: 0;
 
           @media (max-width: 490px) {
             display: flex;
