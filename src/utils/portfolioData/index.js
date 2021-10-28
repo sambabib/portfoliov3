@@ -1,77 +1,39 @@
-// @images
-import invoiceMe from '../../assets/images/invoiceMe.PNG';
-import board from '../../assets/images/board.svg';
-
 export const portfolioData = [
   {
     id: '01',
     title: 'shop.fanny.',
-    tags: [
-      {
-        id: 1,
-        name: 'react',
-      },
-      {
-        id: 2,
-        name: 'node',
-      },
-      {
-        id: 3,
-        name: 'express.js',
-      },
-      {
-        id: 4,
-        name: 'mongoDB',
-      },
-    ],
-    img: ''
+    tags: ['react', 'redux', 'mongodb', 'nodejs', 'expressjs'],
+    description: `shop.fanny is as an e-commerce store that lets you shop your favorite items. It is built ontop the MERN stack, with no payment gateway currently implemented.`, 
+    code: `https://github.com/sambabib/shop-fanny`
   },
   {
     id: '02',
-    title: 'invoiceMe.',
-    tags: [
-      {
-        id: 1,
-        name: 'react',
-      },
-      {
-        id: 2,
-        name: 'firebase',
-      },
-    ],
-    img: invoiceMe,
+    title: 'myInvoice.',
+    tags: ['vue', 'vuex', 'firebase'],
+    description: `invoiceMe is an app that provides invoices to your clients, this invoices can be paid forward, edited, and saved.`,
+    live: `https://myinvoice.netlify.app/`,
+    code: `https://github.com/sambabib/invoice-app`
   },
   {
     id: '03',
     title: 'myMuuVees.',
-    tags: [
-      {
-        id: 1,
-        name: 'nuxtjs',
-      },
-    ],
-    img: ''
+    tags: ['nuxtjs'],
+    description: `this is an app that shows movie plots, ratings. myMuuVees is built ontop a dummy movie api.`,
   },
   {
     id: '04',
     title: 'board.fanny.',
-    tags: [
-      {
-        id: 1,
-        name: 'react',
-      },
-    ],
-    img: board,
+    tags: ['react'],
+    description: `board.fanny is a management dashboard used to track company economics/metrics.`,
+    live: `https://boardfanny.netlify.app/`,
+    code: `https://github.com/sambabib/dashboard-fanny`
   },
   {
     id: '05',
     title: 'robofriends.',
-    tags: [
-      {
-        id: 1,
-        name: 'nuxtjs',
-      },
-    ],
-    img: ''
+    tags: ['react'],
+    description: `robofriends was my very first react app, showing all of my friends... my robofriends.`,
+    live: `https://sambabib.github.io/robofriends/`,
+    code: `https://github.com/sambabib/robofriends`
   },
 ];
