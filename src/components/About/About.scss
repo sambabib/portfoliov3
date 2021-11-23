@@ -74,6 +74,11 @@
           width: 150px !important;
           height: 500px !important;
           object-fit: cover !important;
+
+          @media (max-width: 490px) {
+            border: 2px solid orange;
+            height: 400px !important;
+          }
         }
       }
     }
