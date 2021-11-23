@@ -1,6 +1,10 @@
 .about {
   width: 100%;
 
+  @media (max-width: 1440px) {
+    margin: 2rem 0;
+  }
+
   @media (max-width: 1240px) {
     position: relative;
   }

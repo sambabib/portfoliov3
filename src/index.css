@@ -33,16 +33,22 @@ code {
     monospace;
 }
 
+.app {
+  /* border: 2px solid blue; */
+  height: calc(100vh - 200px);
+}
+
 .container {
   width: 100%;
   padding: 1rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
+  /* border: 2px solid yellow; */
 }
 
 @media (max-width: 1440px) {
   .container {
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
   }
 }
 

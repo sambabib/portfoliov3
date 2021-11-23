@@ -1,9 +1,6 @@
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-// @framer motion
-import { AnimatePresence } from 'framer-motion';
-
 // @components
 import Home from './screens/Home/Home';
 import SayHello from './screens/SayHello/SayHello';
@@ -13,12 +10,11 @@ import Portfolio from './screens/Portfolio/Portfolio';
 const App = () => {
   return (
     <>
-      <AnimatePresence exitBeforeEnter initial={false}>
         <Router>
           <Helmet>
             <title>Kite | Folio</title>
           </Helmet>
-          <div className='app'>
+          <div className="app">
             <Topbar />
             <Switch>
               <Route exact path='/'>
@@ -33,7 +29,6 @@ const App = () => {
             </Switch>
           </div>
         </Router>
-      </AnimatePresence>
     </>
   );
 };
