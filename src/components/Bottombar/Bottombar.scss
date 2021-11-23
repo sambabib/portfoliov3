@@ -9,6 +9,10 @@
     align-items: center;
     opacity: 0;
 
+    @media (max-width: 490px) {
+      padding: 2rem 0;
+    }
+
     .bottombar__credit {
       width: 400px;
 
